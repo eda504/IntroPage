@@ -1,0 +1,76 @@
+:root {
+  --pink: #ffb6c1;
+  --lavender: #e0bbff;
+  --mint: #b5ead7;
+  --peach: #ffd7ba;
+  --soft-white: #fff5f7;
+}
+
+body {
+  background: linear-gradient(135deg, #fff5fb 0%, #f0e8ff 100%);
+  min-height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  color: #5d5470;
+}
+
+/* hero */
+.hero {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  backdrop-filter: blur(12px);
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow: 0 15px 35px rgba(255, 182, 193, 0.4);
+  transition: transform 0.4s ease;
+}
+.profile-img:hover {
+  transform: scale(1.08);
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: var(--pink);
+  text-shadow: 3px 3px 15px rgba(255, 182, 193, 0.3);
+}
+
+.subtitle {
+  font-family: 'Kalam', cursive;
+  font-size: 1.9rem;
+  color: #9d78c4;
+}
+
+/* cards */
+.card {
+  background: white;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(255, 182, 193, 0.3);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: var(--pink);
+  margin-bottom: 15px;
+}
+
+/* footer hearts */
+.hearts {
+  color: var(--pink);
+  font-size: 1.3rem;
+  animation: float 4s infinite ease-in-out;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
