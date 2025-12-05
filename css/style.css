@@ -13,6 +13,22 @@ body {
   color: #5d5470;
 }
 
+/* nav */
+.navbar {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+}
+.navbar-brand, .nav-link {
+  color: var(--pink) !important;
+  font-family: 'Kalam', cursive;
+  font-size: 1.3rem;
+}
+.nav-link:hover, .nav-link.active {
+  color: #ff8fab !important;
+  font-weight: bold;
+}
+.text-pink { color: var(--pink); }
+
 /* hero */
 .hero {
   background: rgba(255, 255, 255, 0.92);
